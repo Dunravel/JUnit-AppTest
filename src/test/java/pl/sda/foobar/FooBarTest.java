@@ -40,7 +40,7 @@ public class FooBarTest {
     @Test
     public void shouldReturnStringBarWhenIntIsDividableByFive(){
         //given
-        int number = 15;
+        int number = 5;
 
         //when
         String result = fooBar.convertToString(number);
