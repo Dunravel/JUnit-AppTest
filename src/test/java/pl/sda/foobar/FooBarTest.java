@@ -11,7 +11,7 @@ public class FooBarTest {
     private static final int DIVIDABLE_BY_THREE = 3;
     private static final int DIVIDABLE_BY_FIFTEEN = 15;
     private FooBar fooBar;
-    private static final int DIVIDABLE_BY_FIVE = 5;
+    private static final int DIVIDABLE_BY_FIVE = 10;
 
     @Before
     public void init(){
