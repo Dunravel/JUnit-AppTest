@@ -10,6 +10,7 @@ public class FooBarTest {
     private static final String EXPECTED_REPRESENTATION = "1";
     private static final int DIVIDABLE_BY_THREE = 3;
     private FooBar fooBar;
+    private static final int DIVIDABLE_BY_FIVE = 5;
 
     @Before
     public void init(){
@@ -31,19 +32,21 @@ public class FooBarTest {
     @Test
     public void shouldReturnStringFooWhenIntIsDividedByThree() {
         //given
+
         //when
         String result = fooBar.convertToString(DIVIDABLE_BY_THREE);
+
         //then
         Assert.assertEquals("Foo", result);
+
     }
 
     @Test
     public void shouldReturnStringBarWhenIntIsDividableByFive(){
         //given
-        int number = 5;
 
         //when
-        String result = fooBar.convertToString(number);
+        String result = fooBar.convertToString(DIVIDABLE_BY_FIVE);
 
         //then
         Assert.assertEquals("Bar", result);
