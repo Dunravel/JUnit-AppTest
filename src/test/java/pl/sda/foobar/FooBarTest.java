@@ -4,17 +4,19 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class FooBarTest {
-    @Test
 
+    public static final int NUMBER = 1;
+    public static final String EXPECTED_REPRESENTATION = "1";
+
+    @Test
     public void shouldReturnStringIntRepresentationWhenPutInt(){
         //given
-            int x = 1;
+
         //when
-            String z = new FooBar().convertToString(x);
+            String result = new FooBar().convertToString(NUMBER);
 
         //then
-        Assert.assertEquals("1",z); // weryfikujemy czy jest równe
-
+        Assert.assertEquals(EXPECTED_REPRESENTATION,result); // weryfikujemy czy jest równe
     }
 
 
